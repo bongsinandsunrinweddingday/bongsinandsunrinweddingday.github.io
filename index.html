@@ -9,7 +9,7 @@
 	<meta property='og:title' content='곽봉신 ♡ 정선린 결혼합니다!'>
 	<meta name="description" content="2019년 6월 22일(토) 오후 1시 30분y"/>
 	<meta name="og:description" content="2019년 6월 22일(토) 오후 1시 30분"/>
-	<meta property="og:image" content="/img/thumbnail.jpeg"/>
+	<meta property="og:image" content="/img/thumbnail-2.jpeg"/>
 
 	<style>
 		html, body, div, span, applet, object, iframe,
@@ -63,6 +63,7 @@
 		}
 
 		.wrapper {
+			position: relative;
 			display: block;
 			width: 100%;
 		}
@@ -71,11 +72,40 @@
 			display: block;
 			width: 100%;
 		}
+		a {
+			display: block;
+			width: 100%;
+		}
+		@keyframes fade-in {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+		.text {
+			position: absolute;
+			bottom: 120px;
+			right: 50px;
+			left: 50px;
+			animation: fade-in 350ms ease-in;
+		}
 	</style>
 </head>
 <body>
-	<div class="wrapper">
-		<img class="img" src="/img/normal.jpeg" alt="">
+	<div class="visual-wrapper wrapper">
+		<img class="img" src="/img/top-visual.jpeg" alt="">
+		<p class="text">
+			<img src="/img/top-visual-text.png" alt="">
+		</p>
+	</div>
+	<div class="content-wrapper wrapper">
+		<img class="img" src="/img/1.png" alt="">
+		<a href="" target="_blank">
+			<img class="img" src="/img/2.png" alt="">
+		</a>
+		<img class="img" src="/img/3.png" alt="">
 	</div>
 
 </body>
