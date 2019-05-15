@@ -95,7 +95,7 @@
 			/*opacity: 0;*/
 		}
 		.dim {
-			position: absolute;
+			position: fixed;
 			top: 0;
 			left: 0;
 			width: 100%;
@@ -108,9 +108,9 @@
 <body>
 	<div class="visual-wrapper wrapper">
 		<img src="img/1.jpg" alt="">
-<!--		<div class="dim">
+		<div class="dim">
 			<img src="img/dim.gif" alt="">
-		</div>-->
+		</div>
 	</div>
 	<div class="content-wrapper wrapper">
 		<img src="img/2.jpg" alt="">
@@ -124,9 +124,9 @@
 
 
 <script>
-	// setTimeout(function() {
-	// 	$('.dim').fadeOut();
-	// }, 12000);
+	setTimeout(function() {
+		$('.dim').fadeOut();
+	}, 12000);
 </script>
 
 </html>
